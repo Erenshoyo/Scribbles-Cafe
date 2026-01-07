@@ -1,16 +1,53 @@
-# React + Vite
+# ☕ Scribbles Cafe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/daisyui-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white)
 
-Currently, two official plugins are available:
+**Scribbles Cafe** is a modern, responsive personal blogging interface built with React. It features a clean UI for reading articles, a bookmarking system, read-time tracking, and interactive modals for immersive reading.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Dynamic Content:** Blog posts are fetched dynamically from a local JSON data source.
+- **Interactive Modals:** Click on any blog title or "See More" to open a full-screen dialog with a gradient cover image and scrollable content.
+- **Bookmarking System:** Users can bookmark posts to a sticky sidebar reading list.
+- **Read Tracker:** Tracks the number of blogs read and removes them from bookmarks automatically upon completion.
+- **Responsive Design:** Fully responsive layout using **Tailwind CSS** and **DaisyUI**.
+- **Sticky Navbar:** Glassmorphism-style navigation bar with social media integration.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js (Vite)
+- **Styling:** Tailwind CSS
+- **Component Library:** DaisyUI
+- **Icons:** React Icons (Feather/Ionicons)
+- **Data:** Local JSON (Simulated API)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally on your machine.
+
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed.
+
+### Installation
+
+1. **Clone the repository**
+   git clone [https://github.com/Erenshoyo/scribbles-cafe.git](https://github.com/Erenshoyo/scribbles-cafe.git)
+   cd scribbles-cafe
+2. **Install dependencies**
+   npm install
+   npm run dev
+3. **Project Structure**
+  src/
+  ├── assets/          # Static assets
+  ├── components/
+  │   ├── Blog/        # Single Blog Card & Modal Logic
+  │   ├── Blogs/       # Main Grid Container & Data Fetching
+  │   ├── Navbar/      # Top Navigation & Social Links
+  │   ├── Footer/      # Simple Footer
+  ├── App.jsx          # Main Layout (Sidebar & State Management)
+  ├── index.css        # Tailwind & DaisyUI imports
+public/
+  └── blogs.json       # Mock Data for blog posts
