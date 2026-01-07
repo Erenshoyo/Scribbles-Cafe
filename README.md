@@ -34,20 +34,26 @@ Make sure you have [Node.js](https://nodejs.org/) installed.
 ### Installation
 
 1. **Clone the repository**
-   git clone [https://github.com/Erenshoyo/scribbles-cafe.git](https://github.com/Erenshoyo/scribbles-cafe.git)
+   ```bash
+   git clone https://github.com/Erenshoyo/scribbles-cafe.git
    cd scribbles-cafe
-2. **Install dependencies**
    npm install
    npm run dev
-3. **Project Structure**
-  src/
-  ├── assets/          # Static assets
-  ├── components/
-  │   ├── Blog/        # Single Blog Card & Modal Logic
-  │   ├── Blogs/       # Main Grid Container & Data Fetching
-  │   ├── Navbar/      # Top Navigation & Social Links
-  │   ├── Footer/      # Simple Footer
-  ├── App.jsx          # Main Layout (Sidebar & State Management)
-  ├── index.css        # Tailwind & DaisyUI imports
+
+### Project Structure
+
+```text
+src/
+├── assets/            # Static assets
+├── components/
+│   ├── Blog/          # Single Blog Card & Modal Logic
+│   ├── Blogs/         # Main Grid Container & Data Fetching
+│   ├── Navbar/        # Top Navigation & Social Links
+│   ├── Footer/        # Simple Footer
+├── App.jsx            # Main Layout (Sidebar & State Management)
+├── index.css          # Tailwind & DaisyUI imports
+
 public/
-  └── blogs.json       # Mock Data for blog posts
+└── blogs.json         # Mock Data for blog posts
+
+
